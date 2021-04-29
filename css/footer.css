@@ -1,0 +1,22 @@
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(222, 222, 222);
+    color: rgb(151, 154, 18);
+    font-size: 15px;
+    padding: 1px;
+    font-weight: bold;
+}
+
+.footer__contact {
+    color: #6f6f6f;
+    font-weight: normal;
+}
+
+.footer__header {
+    color: rgb(63, 122, 158);
+}
+
+.hidden {
+    display: none;
+}

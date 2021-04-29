@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian - Moja strona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/button.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/darkTheme.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="header">Witam na mojej stronie!</h1>
+    </header>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#o-mnie">O mnie</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#ulubione-utwory">Ulubione utwory</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#zainteresowania">Zainteresowania</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#interakcje-js">Interakcje Java Script</a>
+            </li>
+            <li class="navigation__item"><a class="navigation__link" href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main class="mainContainer">
+        <img src="https://www.tecnoglare.com/wp-content/uploads/2019/06/web_development_service.png" class="imageHeader"
+            alt="frontend_developer">
+        <section id="o-mnie" class="section">
+            <h2 class="section__header">O mnie</h2>
+            <p class="section__paragraph">Witam, mam na imię <strong>Adrian</strong>, interesuję się motoryzacją i
+                informatyką. W 2017
+                roku
+                ukończyłem technikum o <b>profilu informatycznym</b>. Ze specjalizacji, które miałem najbardziej
+                interesowało mnie tworzenie stron i aplikacji internetowych. Planowałem później uczyć się programowania
+                frontend, ponieważ bardzo mi się to spodobało, lecz nie miałem chęci i nie znalazłem kursu, który by
+                mnie
+                zainteresował aż do teraz. Przypadkowo trafiłem na LIVE "Jak
+                zostać programistą", podczas którego dowiedziałem się o <strong>kursie YouCode</strong>. Była to idealna
+                okazja, żeby zacząć naukę frontend, więc postanowiłem dołączyć do kursu.
+            </p>
+            <p class="section__paragraph">
+                Aktualnie pracuję na produkcji w branży motoryzacyjnej, jednak chciałbym to zmienić i <em>pracować w
+                    zawodzie
+                    IT jako frondend developer</em>, dlatego zdecydowałem się na <strong>kurs programowania w
+                    YouCode</strong>. Postaram się przejść ten kurs jak najlepiej.
+            </p>
+        </section>
+        <section id="ulubione-utwory" class="section">
+            <h2 class="section__header">Muzyka - moje ulubione utwory</h2>
+            <div class="section__table">
+                <table class="table">
+                    <caption class="table__caption">Moje ulubione utwory</caption>
+                    <tr class="table__row">
+                        <th class="table__cell table__header" scope="col">Tytuł</th>
+                        <th class="table__cell table__header" scope="col">Wykonawca</th>
+                        <th class="table__cell table__header" scope="col">Album</th>
+                        <th class="table__cell table__header" scope="col">Rok</th>
+                        <th class="table__cell table__header" scope="col">Odsłuchaj</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">Scare Me</th>
+                        <td class="table__cell">LUM!X, KSHMR, Gabry Ponte</td>
+                        <td class="table__cell">Scare Me</td>
+                        <td class="table__cell" rowspan="3">2020</td>
+                        <td class="table__cell"><a class="table__link" target="_blank" rel="noreferrer noopener"
+                                title="LUM!X, KSHMR, Gabry Ponte - Scare Me"
+                                href="https://www.youtube.com/watch?v=5gQmDY-05vg">YouTube<br><span
+                                    class="table__link--special">(otwórz
+                                    w
+                                    nowej
+                                    karcie)</span></a></td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">The Passenger (LaLaLa)</th>
+                        <td class="table__cell">MOKABY & D.T.E, LUM!X, Gabry Ponte</td>
+                        <td class="table__cell">The Passenger (LaLaLa)</td>
+                        <td class="table__cell"><a class="table__link" target="_blank" rel="noreferrer noopener"
+                                title="LUM!X x MOKABY & D.T.E x Gabry Ponte – The Passenger"
+                                href="https://www.youtube.com/watch?v=JBR-c2Cu-yM">YouTube<br><span
+                                    class="table__link--special">(otwórz
+                                    w
+                                    nowej
+                                    karcie)</span></a></td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">I Was Made</th>
+                        <td class="table__cell">VINAI, Le Pedre</td>
+                        <td class="table__cell">I Was Made</td>
+                        <td class="table__cell"><a class="table__link" target="_blank" rel="noreferrer noopener"
+                                title="VINAI x Le Pedre - I Was Made (Official Lyric Video)"
+                                href="https://www.youtube.com/watch?v=ZMKUJty3ef0">YouTube<br><span
+                                    class="table__link--special">(otwórz
+                                    w
+                                    nowej
+                                    karcie)</span></a></td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">Kalima Minou</th>
+                        <td class="table__cell">Shanguy, Mark Neve</td>
+                        <td class="table__cell">Kalima Minou</td>
+                        <td class="table__cell">2021</td>
+                        <td class="table__cell"><a class="table__link" target="_blank" rel="noreferrer noopener"
+                                title="SHANGUY x MARK NEVE - Kalima Minou (Official Video)"
+                                href="https://www.youtube.com/watch?v=T2GLvkBDRHY">YouTube<br><span
+                                    class="table__link--special">(otwórz
+                                    w
+                                    nowej
+                                    karcie)</span></a></td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">Who's Laughing Now</th>
+                        <td class="table__cell">Ava Max</td>
+                        <td class="table__cell">Heaven & Hell</td>
+                        <td class="table__cell">2020</td>
+                        <td class="table__cell"><a class="table__link" target="_blank" rel="noreferrer noopener"
+                                title="Ava Max - Who's Laughing Now [Official Music Video]"
+                                href="https://www.youtube.com/watch?v=89S-RbszwJE">YouTube<br><span
+                                    class="table__link--special">(otwórz
+                                    w
+                                    nowej
+                                    karcie)</span></a></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="zainteresowania" class="section">
+            <h2 class="section__header">Zainteresowania</h2>
+            <ul>
+                <li class="section__interestsList">Motoryzacja</li>
+                <li class="section__interestsList">Drift</li>
+                <li class="section__interestsList">Motocykle</li>
+                <li class="section__interestsList">Informatyka</li>
+            </ul>
+        </section>
+        <section id="interakcje-js" class="section">
+            <h2 class="section__header">Przykładowe interakcje Java Script</h2>
+            <p>
+                <button class="button js-changeImage">Zmień obrazek</button>
+                <button class="button js-changeTheme">Ciemny motyw</button>
+            </p>
+            <img src="https://www.krosno112.pl/media/k2/galleries/7201/71483003_1124370244426292_5176988918142205952_o.jpg"
+                class="section__image js-section__imageCar1" alt="drift_car">
+            <img src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2019/06/12/2b78a189-4b27-4b0c-9c3c-f408996d75f6/drift-masters"
+                class="section__image js-section__imageCar2 hidden" alt="drift_car">
+        </section>
+        <section class="section section--linkTop">
+            <p><a class="section__linkTop" href="#">Wróć na górę</a></p>
+        </section>
+    </main>
+    <footer id="kontakt" class="footer">
+        <h3 class="footer__header">Kontakt</h3>
+        <p class="footer__contact">Adrian<br>Rzeszów<br>00-000<br>Tel. 123 321 123</p>
+        <p>Strona stworzona podczas kursu <strong>Youcode</strong> 2021</p>
+    </footer>
+</body>
+
+</html>

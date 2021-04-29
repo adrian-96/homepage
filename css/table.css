@@ -1,0 +1,60 @@
+.section__table {
+    overflow-x: auto;
+}
+
+.table {
+    color: #313131;
+    border-collapse: collapse;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table__caption {
+    text-align: left;
+    font-weight: bold;
+}
+
+.table__cell {
+    border: 1px solid #fff;
+    padding: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table__header {
+    background-color: hsl(203, 44%, 67%);
+}
+
+.table__header:hover {
+    background-color: hsl(203, 44%, 57%);
+}
+
+.table__row {
+    background-color: hsl(203, 44%, 88%);
+}
+
+.table__row:nth-child(even) {
+    background-color: hsl(203, 44%, 95%);
+}
+
+.table__row:hover {
+    background-color: hsl(203, 44%, 76%);
+}
+
+.table__link {
+    text-decoration: none;
+    color: rgb(150, 0, 0);
+}
+
+.table__link:hover {
+    color: red;
+}
+
+.table__link:active {
+    color: white;
+}
+
+.table__link--special {
+    font-size: 9px;
+}
