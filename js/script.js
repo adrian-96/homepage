@@ -4,6 +4,8 @@
     };
     welcome();
 
+    const changeThemeButton = document.querySelector(".js-changeTheme");
+    
     const changeTheme = () => {
         const body = document.querySelector("body");
         const navigation = document.querySelector(".navigation");
@@ -13,7 +15,7 @@
         navigation.classList.toggle("navigation--darkTheme");
         table__caption.classList.toggle("table__caption--darkTheme");
         footer.classList.toggle("footer--darkTheme");
-        changeTheme.innerText = changeTheme.innerText === "Ciemny motyw" ? "Jasny motyw" : "Ciemny motyw";
+        changeThemeButton.innerText = changeThemeButton.innerText === "Ciemny motyw" ? "Jasny motyw" : "Ciemny motyw";
     };
 
     const changeImage = () => {
@@ -24,7 +26,6 @@
     };
 
     const init = () => {
-        const changeThemeButton = document.querySelector(".js-changeTheme");
         changeThemeButton.addEventListener("click", changeTheme);
 
         const changeImageButton = document.querySelector(".js-changeImage");
