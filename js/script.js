@@ -1,26 +1,36 @@
-console.log("Witam developerów!");
+{
+    const welcome = () => {
+        console.log("Witam developerów!");
+    };
+    welcome();
 
-let changeImage = document.querySelector(".js-changeImage");
-let body = document.querySelector("body");
+    const changeTheme = () => {
+        const body = document.querySelector("body");
+        const navigation = document.querySelector(".navigation");
+        const table__caption = document.querySelector(".table__caption");
+        const footer = document.querySelector(".footer");
+        body.classList.toggle("body--darkTheme");
+        navigation.classList.toggle("navigation--darkTheme");
+        table__caption.classList.toggle("table__caption--darkTheme");
+        footer.classList.toggle("footer--darkTheme");
+        changeTheme.innerText = changeTheme.innerText === "Ciemny motyw" ? "Jasny motyw" : "Ciemny motyw";
+    };
 
-let navigation = document.querySelector(".navigation");
-let section__header = document.querySelector(".section__header");
-let table__caption = document.querySelector(".table__caption");
-let footer = document.querySelector(".footer");
+    const changeImage = () => {
+        const imageCar1 = document.querySelector(".js-section__imageCar1");
+        const imageCar2 = document.querySelector(".js-section__imageCar2");
+        imageCar1.classList.toggle("hidden");
+        imageCar2.classList.toggle("hidden");
+    };
 
-let imageCar1 = document.querySelector(".js-section__imageCar1");
-let imageCar2 = document.querySelector(".js-section__imageCar2");
-let changeTheme = document.querySelector(".js-changeTheme");
+    const init = () => {
+        const changeThemeButton = document.querySelector(".js-changeTheme");
+        changeThemeButton.addEventListener("click", changeTheme);
 
-changeTheme.addEventListener("click", () => {
-    body.classList.toggle("body--darkTheme");
-    navigation.classList.toggle("navigation--darkTheme");
-    table__caption.classList.toggle("table__caption--darkTheme");
-    footer.classList.toggle("footer--darkTheme");
-    changeTheme.innerText = changeTheme.innerText === "Ciemny motyw" ? "Jasny motyw" : "Ciemny motyw";
-});
+        const changeImageButton = document.querySelector(".js-changeImage");
+        changeImageButton.addEventListener("click", changeImage);
+    };
 
-changeImage.addEventListener("click", () => {
-    imageCar1.classList.toggle("hidden");
-    imageCar2.classList.toggle("hidden");
-});
+init();   
+ 
+}
