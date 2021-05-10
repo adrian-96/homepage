@@ -2,18 +2,17 @@
     const welcome = () => {
         console.log("Witam developerów!");
     };
-    welcome();
 
     const changeThemeButton = document.querySelector(".js-changeTheme");
     
     const changeTheme = () => {
         const body = document.querySelector("body");
-        const navigation = document.querySelector(".navigation");
-        const table__caption = document.querySelector(".table__caption");
+        const navigation = document.querySelector(".js-navigation");
+        const tableCaption = document.querySelector(".table__caption");
         const footer = document.querySelector(".footer");
         body.classList.toggle("body--darkTheme");
         navigation.classList.toggle("navigation--darkTheme");
-        table__caption.classList.toggle("table__caption--darkTheme");
+        tableCaption.classList.toggle("table__caption--darkTheme");
         footer.classList.toggle("footer--darkTheme");
         changeThemeButton.innerText = changeThemeButton.innerText === "Ciemny motyw" ? "Jasny motyw" : "Ciemny motyw";
     };
@@ -26,6 +25,7 @@
     };
 
     const init = () => {
+        welcome();
         changeThemeButton.addEventListener("click", changeTheme);
 
         const changeImageButton = document.querySelector(".js-changeImage");
